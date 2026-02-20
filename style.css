@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  padding: 14px;
+  border-bottom: 1px solid #222;
+  text-align: center;
+}
+
+.header h1 {
+  color: #00bfff;
+  font-size: 22px;
+}
+
+.header p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Chat Area */
+#chat {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* Messages */
+.message {
+  max-width: 80%;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.user {
+  align-self: flex-end;
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ai {
+  align-self: flex-start;
+  background: #111;
+  padding: 12px;
+  border-left: 3px solid #00bfff;
+}
+
+/* Input bar */
+.input-bar {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #222;
+  background: #0b0b0b;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 12px;
+  background: #111;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.input-bar button {
+  margin-left: 10px;
+  padding: 12px 16px;
+  background: #00bfff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
